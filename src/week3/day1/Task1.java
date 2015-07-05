@@ -8,13 +8,10 @@ public class Task1 {
     MatrixHelper.print(matrix);
 
 //    change first and last row in matrix
-    for (int i = 0; i < matrix[0].length; i++) {
-
-      int temp = matrix[0][i];
-      matrix[0][i] = matrix[matrix.length - 1][i];
-      matrix[matrix.length - 1][i] = temp;
-
-    }
+//    for (int i = 0; i < matrix[0].length; i++) {
+//      MatrixHelper.swap(matrix, 0, i, matrix.length - 1, i);
+//    }
+    MatrixHelper.changeRows(matrix, 0, matrix.length - 1);
     System.out.println("~~~~~~~~~~~~~~~~");
     MatrixHelper.print(matrix);
 
